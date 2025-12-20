@@ -1,1 +1,20 @@
 @import "tailwindcss";
+
+/* Minimal, lightweight global polish */
+:root {
+	color-scheme: light dark;
+}
+
+::selection {
+	background: rgba(16, 185, 129, 0.25); /* emerald-500/25 */
+}
+
+html, body, #root {
+	height: 100%;
+}
+
+body {
+	font-feature-settings: "rlig" 1, "calt" 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
